@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "build": "node --check src/main.js && rm -rf dist && mkdir -p dist/src && cp index.html dist/index.html && cp src/main.js src/styles.css dist/src/",
+    "preview": "python3 -m http.server 4173 --directory dist"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
